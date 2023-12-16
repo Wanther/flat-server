@@ -41,7 +41,7 @@ export class LoginPhone extends AbstractLogin {
                 createUser,
                 createUserPhone,
                 createUserSensitive,
-                this.setGuidePPTX(this.svc, t),
+                //this.setGuidePPTX(this.svc, t),
             ]);
         });
     }

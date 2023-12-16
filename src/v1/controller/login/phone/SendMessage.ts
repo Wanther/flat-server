@@ -37,7 +37,8 @@ export class SendMessage extends AbstractController<RequestType, ResponseType> {
         const safePhone = SMSUtils.safePhone(phone);
 
         if (await SendMessage.canSend(safePhone)) {
-            const success = await sms.send();
+            //const success = await sms.send();
+            const success = true
             if (!success) {
                 throw new ControllerError(ErrorCode.SMSFailedToSendCode);
             }

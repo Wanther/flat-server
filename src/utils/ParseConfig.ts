@@ -7,8 +7,10 @@ const configDirPath =
     process.env.IS_TEST === "yes"
         ? path.join(__dirname, "..", "..", "config")
         : path.join(__dirname, "..", "config");
+//const configDirPath = path.join(__dirname, "..", "..", "config")
 
 const env = process.env.IS_TEST === "yes" ? "test" : process.env.NODE_ENV;
+//const env = 'development'
 
 const configPath = (() => {
     const filenames = [`${env}.local.yaml`, `${env}.yaml`];

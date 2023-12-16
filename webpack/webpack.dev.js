@@ -14,6 +14,7 @@ module.exports = merge(common, {
 
     devServer: {
         hot: true,
+        allowedHosts: ['localhost:3000']
     },
 
     plugins: [new NoEmitOnErrorsPlugin()],
